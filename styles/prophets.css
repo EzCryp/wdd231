@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+header, footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+#cards {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+section {
+    padding: 20px;
+    background-color: #0c51a0;
+    border: 1px solid #5b5757;
+    border-radius: 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+h1 {
+    color: #103157;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #fff;
+    margin: 10px 0;
+}
+
+p {
+    color: #3b4b5c;
+}
+
+#test {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#test div {
+    width: 50%;
+}
