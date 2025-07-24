@@ -32,12 +32,8 @@
     }
 
     .navi li:hover {
-        /* color: var(--primary); */
-        background-color: var(--primary);
-        /* color: var(--primary); */
-        transition: background-color 0.3sease;
+        background-color: var(--primary); 
         border-radius: 30px;
-        /* filter: brightness(0.8); */
     } 
  
 
