@@ -1,0 +1,282 @@
+/*****************************
+
+    General Styles
+
+******************************/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    --primary: #104056;
+    --color1: #89FFC7;
+    --color2: #f8f8f8;
+    --color3: #ffD05C;
+}
+
+img{
+    width: 100%;
+}
+
+body {
+    min-width: 420px;
+}
+
+/*****************************
+
+    NAV and HEADER
+
+******************************/
+
+.header_imgCon img {
+    width: 40%;
+    height: 40%;
+}
+/*hamburger menu*/
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    justify-content: space-around;
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    cursor: pointer;
+}
+
+.ham {
+    width: 100%;
+    height: 4px;
+    background-color: #89FFC7;
+    border-radius: 2px;
+}
+
+#nav-button:hover .ham {
+    filter: brightness(0.5);
+}
+ .navi {
+    display: none;
+} 
+
+.navi li:hover {
+    background-color: #89FFC7;
+    color: #000;
+    filter: brightness(0.8);
+}
+
+
+.navi.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5.7em;
+    right: 0;
+    left: 0;
+    background-color: var(--primary);
+    width: 100%;
+    z-index: 100;
+} 
+
+.nav-button.close .ham:nth-child(2) {
+    opacity: 0;
+}
+  
+.nav-button.close .ham:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+  
+.nav-button.close .ham:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.active{
+    border-bottom: 3px solid var(--color2);
+}
+
+header {
+    background-color: var(--primary);
+    display: flex;
+    position: relative;
+    padding: 20px 20px;
+}
+
+.chamber-nameCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_imgCon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    color: var(--color2);
+    gap: 1em;
+}
+
+.header_imgCon img {
+    width: 3.5em;
+    height: 3.5em;
+}
+
+.name{
+    font-size: 1.5em;
+    color: #89FFC7;
+}
+
+nav{
+    background-color: var(--primary);
+    
+}
+
+nav .navi li{
+    padding: .8em;
+
+}
+
+nav .navi li a:hover{
+    color: #89FFC7;
+}
+
+nav .navi li a{
+    text-decoration: none;
+    color: var(--color2);
+    font-weight: 500;
+}
+
+/*****************************
+
+    MAIN STYLES
+
+******************************/
+
+main{
+    color: var(--primary);
+    padding: 0 1em 1em 1em;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1em;
+    margin: 2em;
+}
+
+.button_member {
+    /* background-color: var(--color2); */
+    /* border: 5px solid var(--primary); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+p.level {
+    font-size: 0.75em;
+    font-weight: 100;
+}
+
+.button_member img {
+    width: 2em;
+}
+
+.button_member:hover{
+    background-color: var(--primary);
+}
+
+.businesses, .memberCardCon {
+    display: grid;
+    text-align: center;
+    padding: 0;
+    gap: 20px;
+    margin: 20px 0 20px 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.logo-container{
+    align-items: center;
+    justify-content: center;
+}
+
+.list{
+    grid-template-columns: 1fr;
+}
+
+/*businessCards*/
+.list .b-cards {
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+img .pic {
+    width: 40px;
+    height: 40px;
+    background-color: #104556;
+}
+
+section.b-cards {
+    text-align: center;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 250px;
+}
+
+section.b-cards h2{
+    font-size: 1em;
+}
+
+/*****************************
+
+    FOOTER STYLES
+
+******************************/
+footer {
+    padding: 1em;
+    background-color: var(--primary);
+    color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    flex-direction: row;
+    margin-top: 2em;
+
+}
+
+.soc-med {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.soc-med a:hover img {
+    filter: brightness(0.5);
+}
+
+.soc-med a img{
+    width: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5em;
+    gap: 0.25em;
+}
+
+.activeButton {
+    background-color: var(--primary);
+}
+

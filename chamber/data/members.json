@@ -1,0 +1,76 @@
+{ 
+    "members": [
+        {
+            "name": "Japan Home Center",
+            "address": "123 Main St, Rexburg, ID 83440",
+            "number": "(208) 555-1234",
+            "website": "https://www.japanhome.com.ph/",
+            "image": "japan_logo.png",
+            "membership": "Gold"
+        },
+        {
+            "name": "Mercury Drugstore",
+            "address": "456 Elm St, Rexburg, ID 83440",
+            "number": "(208) 555-5678",
+            "website": "https://www.mercurydrug.com/",
+            "image": "mercurydrug_logo.webp",
+            "membership": "Silver"
+        },
+        {
+            "name": "Anytime Fitness",
+            "address": "789 Oak St, Rexburg, ID 83440",
+            "number": "(208) 555-8765",
+            "website": "https://www.anytimefitness.com/",
+            "image": "anytimefitness_logo.jpg",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Mary Grace Bakery",
+            "address": "123 Main St, Rexburg, ID 83440",
+            "number": "(208) 555-4321",
+            "website": "https://www.marygracecafe.com/?",
+            "image": "marygrace-logo.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "Bruno's Barbershop",
+            "address": "321 Pine St, Rexburg, ID 83440",
+            "number": "(208) 555-9876",
+            "website": "https://www.brunosbarbers.com/",
+            "image": "brunos-logo.png",
+            "membership": "Silver"
+        },
+        {
+            "name": "Maluto Law Firm",
+            "address": "654 Maple St, Rexburg, ID 83440",
+            "number": "(208) 555-2468",
+            "website": "http://www.malutolaw.com/",
+            "image": "maluto-law-firm_logo.png",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Wilcon Depot",
+            "address": "987 Cedar St, Rexburg, ID 83440",
+            "number": "(208) 555-1357",
+            "website": "https://wilcon.com.ph/",
+            "image": "wilcon-logo.png",
+            "membership": "Gold"
+        },
+        {
+            "name": "Maxicare Insurance",
+            "address": "159 Birch St, Rexburg, ID 83440",
+            "number": "(208) 555-8642",
+            "website": "https://www.maxicare.com.ph/",
+            "image": "maxicare_logo.png",
+            "membership": "Silver"
+        },
+        {
+            "name": "Pizza Hut",
+            "address": "753 Spruce St, Rexburg, ID 83440",
+            "number": "(208) 555-9513",
+            "website": "https://www.pizzahut.com.ph/",
+            "image": "pizzahut_logo.png",
+            "membership": "Bronze"
+        }
+    ]
+}

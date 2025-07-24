@@ -1,0 +1,81 @@
+@media only screen and (min-width:1200px){
+    
+    header{
+    background-color: var(--primary);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%;
+    }
+
+    nav{
+        background: none;
+    } 
+
+    .nav-button {
+        display: none;
+    }
+
+    .navi {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    .navi li:hover {
+        background-color: #89FFC7;
+        /* color: #000; */
+        border-radius: 30px;
+        /* filter: brightness(0.8); */
+    } 
+
+    .navi li a{
+        text-decoration: none;
+        padding: 1em;
+        color: var(--primary);
+        font-size: large;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    h1 {
+        grid-column: span 2;
+    }
+
+    main {
+        padding: 0 15%;
+    }
+
+/*****************************
+
+    FOOTER STYLES
+
+******************************/
+    footer{
+        flex-direction: row;
+        align-items: center;
+        padding: 1em 15%;
+    }
+
+    .soc-med{
+        width: 90%;
+    }
+
+    .chamber-info {
+        width: 60%; 
+    }
+
+    .student-info {
+        width: 60%;
+    }
+
+    .list .b-cards{
+        grid-template-columns: 1fr 1fr 0.6fr 1fr;
+    }
+}
