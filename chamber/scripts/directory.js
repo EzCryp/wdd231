@@ -1,7 +1,7 @@
 // constants for the directory script
 // This script fetches business data from a JSON file and displays it in a grid or list
 // format on the Chamber of Commerce directory page.
-const membersUrl = '/chamber/data/members.json';
+const membersUrl = 'data/members.json';
 const memberListCon = document.querySelector('#memberList');
 const gridButton = document.querySelector('.grid-button');
 const listButton = document.querySelector('.list-button');
