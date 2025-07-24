@@ -58,13 +58,13 @@ body {
 #nav-button:hover .ham {
     filter: brightness(0.5);
 }
- .navi {
+
+.navi {
     display: none;
 } 
 
 .navi li:hover {
-    background-color: #89FFC7;
-    color: #000;
+    background-color: var(--primary);
     filter: brightness(0.8);
 }
 

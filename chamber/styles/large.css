@@ -16,6 +16,11 @@
         display: none;
     }
 
+    #nav-button:hover .ham {
+        color: var(--primary);
+        filter: brightness(0.5);
+    }
+
     .navi {
         display: flex;
         list-style: none;
@@ -27,21 +32,23 @@
     }
 
     .navi li:hover {
-        background-color: #89FFC7;
-        /* color: #000; */
+        /* color: var(--primary); */
+        background-color: var(--primary);
+        /* color: var(--primary); */
+        transition: background-color 0.3sease;
         border-radius: 30px;
         /* filter: brightness(0.8); */
     } 
+ 
 
     .navi li a{
-        text-decoration: none;
+        /* text-decoration: none; */
         padding: 1em;
-        color: var(--primary);
         font-size: large;
     }
 
     .name {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     h1 {
