@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCoC - Join Page</title>
+    <meta name="description" content="Brooks Chamber of Commerce. Join page.  Find local businesses and services.">
+    <meta name="author" content="Ezra Zacarias">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Brooks Chamber of Commerce - Join Page">
+    <meta property="og:description" content="Chamber of Commerce. Directory page. Find local businesses and services.">
+    <meta property="og:image" content="https://ezcryp.github.io/wdd231/chamber/images/brooks-chamber.webp">
+    <meta property="og:url" content="https://ezcryp.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <!-- style sheete here -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+     <!-- favicon and logo-->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="coc-logo" href="images/coc-logo.svg">
+
+    <!-- javascript link -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+         <!-- <button id="nav-button" class="hamburger" aria-label="navigation"></button> -->
+        <div  class="nav-button" id="nav-button">
+            <span class="ham"></span>
+            <span class="ham"></span>
+            <span class="ham"></span>   
+        </div>
+
+        <div class="header_imgCon">
+            <a href="index.html"><img src="images/coc-logo.svg" alt="brooks-chamber of commerce logo" width="64" height="64"></a>
+            <div class="chamber-nameCon">
+                <p class="name">Brooks-Chamber of Commerce</p>
+                <span class="chamber">Chamber of Commerce</span>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="navi">
+                <!-- make sure to put class active to the current page -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+       <h1>Join Us Today</h1>
+            <div class="content">
+                <form action="thankyou.html" method="GET">
+                    <div class="form-group">
+                        <label class="required">First Name:
+                            <input class="form-control" type="text" name="firstname" title="First Name" autocomplete="on" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="required">Last Name:
+                            <input class="form-control" type="text" name="lastname" title="Last Name" autocomplete="on" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Organization Title:
+                            <input class="form-control" type="text" name="organization" title="Organization Title" autocomplete="organization-title" pattern="[a-zA-Z\- ]{7,}">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="required">Email:
+                            <input class="form-control" type="email" name="email" title="Email Address" autocomplete="email" placeholder="email@example.com" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="required">Phone Number:
+                            <input class="form-control" type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="required">Business/Organization's Name:
+                            <input class="form-control" type="text" name="business-name" title="Business/Organization's Name" autocomplete="organization" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Membership Level:
+                            <select class="form-control" name="membership-level">
+                                <option disabled selected>Select Membership</option>
+                                <option value="np">NP Membership</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Business/Organization's Description:
+                            <textarea class="form-control" title="Business/Organization's Description" name="description" rows="6"></textarea>
+                        </label>
+                    </div>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <button type="submit" class="btn btn-secondary btn-lg self-right">Submit</button>
+                    <div class="required text-sm">required fields</div>
+                </form>
+                <div class="membership-levels-container">
+                    <div class="membership-levels">
+                        <div>
+                            <img src="images/np_membership.svg" alt="Non-Profit Membership Level">
+                        </div>
+                        <div>
+                            <div>Non-Profit Membership Level</div>
+                            <div>
+                                <button class="learn-more-button btn btn-secondary " data-id="np">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membership-levels animation-delay-1">
+                        <div>
+                            <img src="images/bronze_membership.svg" alt="Bronze Membership Level">
+                        </div>
+                        <div>
+                            <div>Bronze Membership Level</div>
+                            <div>
+                                <button class="learn-more-button btn btn-secondary " data-id="bronze">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membership-levels animation-delay-2">
+                        <div>
+                            <img src="images/silver_membership.svg" alt="Silver Membership Level">
+                        </div>
+                        <div>
+                            <div>Silver Membership Level</div>
+                            <div>
+                                <button class="learn-more-button btn btn-secondary " data-id="silver">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membership-levels animation-delay-3">
+                        <div>
+                            <img src="images/gold_membership.svg" alt="Gold Membership Level">
+                        </div>
+                        <div>
+                            <div>Gold Membership Level</div>
+                            <div>
+                                <button class="learn-more-button btn btn-secondary " data-id="gold">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    
+    <footer role="contentinfo" class="footer">
+          <div class="chamber-info info">
+            <p class="chamber"><strong>Brooks - Chamber of Commerce</strong></p>
+            <p><address>
+                Brooks-Chamber of Commerce Building<br>
+                123 Main St., Suite 100, Brooks, Philippines<br>
+                Email: info@brooks-chamber.org<br>
+                (063) 8822 3333
+            </address></p>
+        </div>
+
+        <div class="soc-med">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook link"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-x.svg" alt="twitter link"></a>
+            <a href="https://www.github.com" target="_blank"><img src="images/github.svg" alt="GitHub link"></a>
+        </div>
+
+        <div class="student-info info">
+            <p>WDD231 Class Project</p>
+            <p>Ezra Zacarias</p>
+            <p>&copy; <span id="currentyear"></span> Brooks Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,11 +1,11 @@
 @media only screen and (min-width:1200px){
     
     header{
-    background-color: var(--primary);
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 15%;
+        background-color: var(--primary);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 15%;
     }
 
     nav{
@@ -28,19 +28,34 @@
         margin: 0;
         display: flex;
         justify-content: space-between;
-        gap: 2em;
+        gap: 0;
+        border: 2px solid var(--color4);
+        border-radius: 40px;
     }
 
     .navi li:hover {
         background-color: var(--primary); 
         border-radius: 30px;
+        /* border: 1px solid var(--color1); */
+        filter:opacity(0.5);
     } 
- 
+    
+    .active{
+        background-color: var(--primary);
+        /* border-bottom: 3px solid var(--color2); */
+        border-radius: 30px;
+        /* border: 1px solid var(--color1); */
+        filter: brightness(0.8);
+    }
 
+    .navi li {
+        padding: 0 3em;
+        /* margin: 3px; */
+    }
     .navi li a{
         /* text-decoration: none; */
-        padding: 1em;
-        font-size: large;
+        padding: 0;
+        font-size: small;
     }
 
     .name {
@@ -52,7 +67,25 @@
     }
 
     main {
-        padding: 0 15%;
+        padding: 2em 15%;
+    }
+
+    .list .b-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .member-url {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
 /*****************************
@@ -61,24 +94,35 @@
 
 ******************************/
     footer{
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
         align-items: center;
+        justify-content: center;
         padding: 1em 15%;
     }
 
     .soc-med{
-        width: 90%;
+        display: flex;
+        /* width: 90%; */
     }
 
     .chamber-info {
-        width: 60%; 
+        text-align: start;
+        /* width: 90%;  */
     }
 
-    .student-info {
-        width: 60%;
+    .info {
+        align-items: flex-start;
+        padding: 0.5em;
+        /* gap: 0.5em; */
     }
 
-    .list .b-cards{
-        grid-template-columns: 1fr 1fr 0.6fr 1fr;
+     .student-info {
+        display: flex;
+        align-items: flex-start;
+        /* width: 90%; */
     }
+
+   
 }

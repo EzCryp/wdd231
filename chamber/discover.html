@@ -4,14 +4,14 @@
     <!-- meta data -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BCoC - Directory Page</title>
-    <meta name="description" content="Brooks Chamber of Commerce. Directory page.  Find local businesses and services.">
+    <title>BCoC - Discover Page</title>
+    <meta name="description" content="Brooks Chamber of Commerce. Discover page.  Find local businesses and services.">
     <meta name="author" content="Ezra Zacarias">
     <!-- Open Graph -->
-    <meta property="og:title" content="Brooks Chamber of Commerce - Directory Page">
+    <meta property="og:title" content="Brooks Chamber of Commerce - Discover Page">
     <meta property="og:description" content="Chamber of Commerce. Directory page. Find local businesses and services.">
     <meta property="og:image" content="https://ezcryp.github.io/wdd231/chamber/images/brooks-chamber.webp">
-    <meta property="og:url" content="https://ezcryp.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://ezcryp.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
     <!-- style sheete here -->
@@ -29,9 +29,8 @@
     <link rel="coc-logo" href="images/coc-logo.svg">
 
     <!-- javascript link -->
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
@@ -54,26 +53,15 @@
             <ul class="navi">
                 <!-- make sure to put class active to the current page -->
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <h1>Member Directory</h1>
-        <div class="buttonContainer">
-            <button class="grid-button button_member activeButton">
-                <img src="images/grid.svg" alt="grid-button">
-            </button>
-            <button class="list-button button_member">
-                <img src="images/list.svg" alt="list-button">
-            </button>
-        </div>
-        <!-- member list -->
-        <div id="memberList" class="memberCardCon grid"></a>
-        </div>
+       
     </main>
     
     <footer role="contentinfo" class="footer">
@@ -82,8 +70,8 @@
             <p><address>
                 Brooks-Chamber of Commerce Building<br>
                 123 Main St., Suite 100, Brooks, Philippines<br>
-                Email: <a href="mailto:info@brooks-chamber.org">info@brooks-chamber.org</a><br>
-                Phone: <a href="tel:+06388223333">(063) 8822 3333</a>
+                Email: info@brooks-chamber.org<br>
+                (063) 8822 3333
             </address></p>
         </div>
 
