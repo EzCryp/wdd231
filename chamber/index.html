@@ -60,61 +60,70 @@
         </nav>
     </header>
     
-    
-    <main>
-        
-       <section class="hero">
+    <main class="main" role="main">
+        <!-- Hero Section -->
+       <section class="heroCon" role="banner">
             <br>
-            <div class="hero">
-                <img src="images/hero.webp" alt="Brooks-Chamber of Commerce">
+            <div class="hero-image">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="images/hero-image-large.webp">
+                    <img src="images/hero-image.webp" alt="Brooks-Chamber of Commerce" width="1199" height="auto" loading="lazy">
+                </picture>
             </div>
 
-        <h1>Welcome</h1>
-        
-        </section>
-        <section class="hero-textCon">
-            <div class="hero-text">
-                <h2>Connecting Local Businesses and Community</h2>
-                <p>Join us in supporting local businesses and fostering community growth.</p>
+            <div class="cta-Btn">
+                <!-- <a href="/join.html">JOIN</a> -->
             </div>
-            <div class="hero-text">
-                <p>Explore our directory to find local businesses and services.</p>
-                <p>Join the Brooks Chamber of Commerce to connect with other businesses.</p>
-                <p>Discover events, news, and resources for local entrepreneurs.</p>
-                <p>Stay informed about the latest developments in the Brooks business community.</p>
-                <p>Contact us for more information or to get involved.</p>
-                <p>Follow us on social media for updates and news.</p>
-                <p>We look forward to serving you and supporting our local businesses.</p>
-                <p>Thank you for visiting the Brooks Chamber of Commerce website!</p>
-                <p>For inquiries, please email us at <a href="mailto:info@brooks-chamber.org">info@brooks-chamber.org</a></p>
+
+            <div class="welcome heading">    
+                <h1>Home</h1>
+            </div>
+            
+    
+        </section>
+
+        <!-- <section class="intro">
+            <h2>Welcome to the Brooks Chamber of Commerce</h2>
+            <p>Discover local businesses, services, and events in Brooks. Join our community to connect with fellow entrepreneurs and residents.</p>
+        </section> -->
+
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <p>Stay updated on the latest happenings in the Brooks community.</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Check the current weather conditions in Brooks.</p>
+            <div class="weather-widget">
+                <img src="images/weather-icon.svg" alt="Weather Icon" width="50" height="50">
+                <p>Sunny, 28°C</p>
             </div>
         </section>
-        <br>
-        <section class="mission">
-            <h2>Our Mission</h2>
-            <p>To promote and support local businesses in Brooks, fostering a thriving community through collaboration, innovation, and economic growth.</p>
-            <p>We aim to connect businesses, provide resources, and advocate for the interests of our members, ensuring a vibrant and sustainable local economy.</p>
-            <p>Join us in our mission to strengthen the Brooks business community and enhance the quality of life for all residents.</p>
-            <p>Contact us to learn more about how you can get involved and benefit from our services.</p>
-            <p>We are committed to transparency, integrity, and excellence in serving our members and the community.</p>
-            <p>Thank you for your interest in the Brooks Chamber of Commerce. We look forward to working with you to achieve our shared goals.</p>
-            <p>For more information, please visit our <a href="directory.html">Directory</a> page or <a href="join.html">Join</a> us today!</p>
+
+        <section class="spotlight">
+            <div class="spotlight-heading">
+                <h2>Spotlight</h2>
+                <p>Featured Business of the Month</p>
+
+            </div>
+            <div class="businesses">
+                <div class="business-card">
+                    <img src="images/spotlight-business.webp" alt="Spotlight Business">
+                    <h3>Local Bakery</h3>
+                    <p>Delicious baked goods made fresh daily. Visit us for your morning coffee and pastries!</p>
+                    <a href="directory.html">View More</a>
+                </div>
+
+            </div>
         </section>
-        <br>
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need assistance, please reach out to us:</p>
-            <p>Email: <a href="mailto:info@brooks-chamber.org">info@brooks-chamber.org</a></p>
-            <p>Phone: (063) 8822 3333</p>    
-            <p>Address: Brooks-Chamber of Commerce Building, 123 Main St., Suite 100, Brooks, Philippines</p>
-            <p>We are here to help you with any inquiries or support you may need.</p>
-            <p>Follow us on social media for updates and news:</p> 
-       </section>
+
+
     </main>
     
     <footer role="contentinfo" class="footer">
           <div class="chamber-info info">
-            <h2>Contact Us</h2>
+
             <p class="chamber"><strong>Brooks - Chamber of Commerce</strong></p>
             <p><address>
                 Brooks-Chamber of Commerce Building<br>
@@ -137,5 +146,6 @@
             <p id="lastModified"></p>
         </div>
     </footer>
+
 </body>
 </html>
