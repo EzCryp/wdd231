@@ -114,6 +114,7 @@ nav .navi li a{
     filter: brightness(0.8);
 }
 
+/* max width 1199px */
 .navi.show {
     display: flex;
     flex-direction: column;
@@ -165,7 +166,7 @@ header {
 
 /*****************************
 
-    MAIN STYLES
+    MAIN GENERAL STYLES 
 
 ******************************/
 
@@ -294,6 +295,7 @@ section.b-cards p{
     padding: 5px;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -304,10 +306,22 @@ section.b-cards p{
 }
 .heroCon {
     display: flex;
+=======
+/*****************************
+
+    HOME PAGE STYLES
+
+******************************/
+
+/* Hero */
+.heroCon {
+    display: grid;
+>>>>>>> b0e2298163ac12fc857193b3f154a41d4d3ebb3e
     justify-content: center;
     align-items: center;
-    margin: 2em 0;
+    margin: -1.2em;
 }
+<<<<<<< HEAD
 .heroCon img {
     width: 100%;
     height: auto;
@@ -410,7 +424,55 @@ section.b-cards p{
     height: 100%;
     background-color: var(--color2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+=======
+
+.heroCon .hero-image img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+>>>>>>> b0e2298163ac12fc857193b3f154a41d4d3ebb3e
 }
+
+.welcome {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+    font-size: 18px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover { 
+    background-color: var(--primary-color-hover);
+}
+/*****************************
+
+    JOIN PAGE STYLES
+
+******************************/
+
+
+
+
+/*****************************
+
+    DISCOVERY PAGE STYLES
+
+******************************/
+
 
 
 .weather {
@@ -560,6 +622,7 @@ section.business-card h3{
     FOOTER STYLES
 
 ******************************/
+
 footer {
     padding: 1em;
     background-color: var(--primary);
