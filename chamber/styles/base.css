@@ -23,7 +23,7 @@ img{
 }
 
 body {
-    min-width: 580px;
+    min-width: 375px;
 }
 
 /*****************************
@@ -163,20 +163,6 @@ header {
     color: #89FFC7;
 }
 
-
-
-/* how to hover to individual member card container? */
-/* transistion per card */
-/* .memberCardCon {
-    transition: transform 0.3s;
-    }
-
-
-
-.memberCardCon:hover {
-    transform: scale(0.8);
-} */
-
 /*****************************
 
     MAIN STYLES
@@ -188,6 +174,7 @@ main{
     padding: 0 1em 1em 1em;
 }
 
+/* directory page */
 /* grid and list button */
 .buttonContainer {
     display: flex;
@@ -220,6 +207,7 @@ p.level {
     background-color: var(--primary);
 }
 
+/* directory page */
 /* business card container */
 .businesses, .memberCardCon {
     display: grid;
@@ -227,10 +215,11 @@ p.level {
     padding: 0;
     gap: 0.8rem;
     margin: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     /* grid-template-rows: repeat(400px, auto); */
     justify-content: center;
 }
+
 .logo-container{
     align-items: flex-end;
     justify-content: center;
@@ -239,8 +228,8 @@ p.level {
 
 .contact-info {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
     justify-content: center;
 }
 
@@ -248,6 +237,7 @@ p.level {
     grid-template-columns: 1fr;
 }
 
+/* directory page */
 /*businessCards*/
 .list .b-cards {
     display: flex;
@@ -281,7 +271,7 @@ section.b-cards {
     flex-wrap: nowrap;
     font-size: small;
     padding: 2em;
-    min-height: 400px;
+    min-height: 500px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* text-align: center; */
     /* justify-self: */
@@ -292,32 +282,278 @@ section.b-cards img {
     padding: inherit;
 }
 
+
+
 section.b-cards h2{
     font-size: 1.5em;
 }
+
 
 section.b-cards p{
     text-align: center;
     padding: 5px;
 }
 
-/* Hero */
-.hero {
+
+
+
+/* Home Page */
+/* Hero Section*/
+.heroCon {
+    position: relative;
+}
+.heroCon {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2em 0;
 }
-.hero img {
+.heroCon img {
     width: 100%;
     height: auto;
-    max-width: 1200px;
-    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+    /* max-width: 1200px; */
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    /* filter: brightness(0.8); */
+}
+
+.cta-Btn {
+    text-align: center;
+    margin: 2em 0;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    background-attachment: fixed;
+    transform: translate(-50%, -50%);
+        
+}
+.cta-Btn a {
+    display: inline-block;
+    padding: 1em 3em;
+    background-color: var(--color4);
+    color: white;
+    border: 1px solid var(--color2);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); */
+}
+.cta-Btn a:hover {
+    background-color: var(--color1);
+    color: var(--color4);
+}
+
+/* Home Page */
+/* Intro Section */
+
+.welcome h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+    /* padding: 1em; */
+}
+
+.contentCon {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+    grid-template: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    /* padding: 2em; */
+    /* background-color: var(--color2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); */
+}
+
+/* Home Page */
+/* Current Events Section */
+.current-eventsCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    height: 100%;
+    background-color: var(--color2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); */
+}
+
+
+/* Home Page */
+/* Weather Section */
+.weatherCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    height: 100%;
+    background-color: var(--color2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); */
+}
+
+.weather-card {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 
+.weather {
+    background-color: var(--color2);
+    padding: 2em;
+}
 
+.weather h2 {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.weather img {
+    display: none;
+    justify-self: right;
+}
+
+
+#weather-temp {
+    font-weight: bold;
+    font-size: 2em;
+    padding: 2em;
+}
+
+
+#weather-icon {
+    width: 20em;
+    height: auto;
+    object-fit: cover;
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+
+.weather-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather-description {
+    font-size: 1.2rem;
+    color: var(--primary);
+    text-align: center;
+    margin-top: 10px;
+}
+
+#forecasted-weather {
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 20px;
+    gap: 1em;
+    justify-items: center;
+    color: var(--color2);
+    /* grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); */
+    /* border: 1px solid #162a79; */
+}
+
+#forecasted-weather > div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--primary);
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.forecasted-temp {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px 30px;
+    flex-wrap: nowrap;
+    color: var(--color2);
+}
+
+
+.forecasted-day {
+    color: var(--color1);
+    font-size: 0.9rem;
+}
+
+
+/* Home Page */
+/* Spotlight Section */
+.spotlightCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: var(--color2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); */
+}
+
+.business-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    font-size: small;
+    padding: 2em;
+    min-height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.events {
+     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    height: 100%;
+    /* font-size: sma; */
+    padding: 2em;
+    min-height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section.business-card h3{
+    font-size: 1.2em;
+}
+
+.business-card img {
+    padding: 20px;
+}
+
+.business-card p {
+    text-align: center;
+    padding: 5px;
+}
+
+.mem-details li {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
 
 /*****************************
 
