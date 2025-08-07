@@ -114,7 +114,7 @@ nav .navi li a{
     filter: brightness(0.8);
 }
 
-/* max width 1199px */
+/* max width 1170px */
 .navi.show {
     display: flex;
     flex-direction: column;
@@ -161,7 +161,7 @@ header {
 
 .name{
     font-size: 1.5em;
-    color: #89FFC7;
+    color: var(--color1);
 }
 
 /*****************************
@@ -295,18 +295,24 @@ section.b-cards p{
     padding: 5px;
 }
 
-<<<<<<< HEAD
-
-
 
 /* Home Page */
 /* Hero Section*/
 .heroCon {
     position: relative;
-}
-.heroCon {
     display: flex;
-=======
+}
+
+.heroCon img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    /* max-width: 1200px; */
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    /* filter: brightness(0.8); */
+}
 /*****************************
 
     HOME PAGE STYLES
@@ -316,12 +322,11 @@ section.b-cards p{
 /* Hero */
 .heroCon {
     display: grid;
->>>>>>> b0e2298163ac12fc857193b3f154a41d4d3ebb3e
     justify-content: center;
     align-items: center;
     margin: -1.2em;
 }
-<<<<<<< HEAD
+
 .heroCon img {
     width: 100%;
     height: auto;
@@ -370,7 +375,8 @@ section.b-cards p{
 
 .intro {
     text-align: center;
-    /* padding: 1em; */
+    padding-top: 2.5em;
+    /* border: 1px solid var(--primary); */
 }
 
 .contentCon {
@@ -393,7 +399,7 @@ section.b-cards p{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 2em;
+    padding: 3em;
     height: 100%;
     background-color: var(--color2);
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); */
@@ -408,7 +414,7 @@ section.b-cards p{
     align-items: center;
     justify-items: center;
     justify-content: space-between;
-    padding: 2em;
+    padding: 3em;
     height: 100%;
     background-color: var(--color2);
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); */
@@ -419,28 +425,29 @@ section.b-cards p{
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    padding: 2em;
+    padding: 3em;
     width: 100%;
     height: 100%;
     background-color: var(--color2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-=======
+}
 
 .heroCon .hero-image img {
     display: flex;
     width: 100%;
     height: auto;
-    max-width: 1200px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
     /* border-radius: 10px; */
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
->>>>>>> b0e2298163ac12fc857193b3f154a41d4d3ebb3e
 }
 
 .welcome {
     display: flex;
     padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     justify-content: center;
 
 }
@@ -458,22 +465,6 @@ section.b-cards p{
 .cta-button:hover { 
     background-color: var(--primary-color-hover);
 }
-/*****************************
-
-    JOIN PAGE STYLES
-
-******************************/
-
-
-
-
-/*****************************
-
-    DISCOVERY PAGE STYLES
-
-******************************/
-
-
 
 .weather {
     background-color: var(--color2);
@@ -592,6 +583,7 @@ section.b-cards p{
     align-content: stretch;
     align-items: stretch;
     flex-wrap: nowrap;
+    width: 100%;
     height: 100%;
     /* font-size: sma; */
     padding: 2em;
@@ -616,6 +608,20 @@ section.business-card h3{
     list-style: none;
     justify-content: center;
 }
+/*****************************
+
+    JOIN PAGE STYLES
+
+******************************/
+
+
+
+
+/*****************************
+
+    DISCOVERY PAGE STYLES
+
+******************************/
 
 /*****************************
 
