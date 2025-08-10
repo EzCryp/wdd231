@@ -10,6 +10,12 @@ main {
     max-width: 1200px;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
     padding: 25px;
     border: 1px solid rgba(0, 0, 0, 0.1);
