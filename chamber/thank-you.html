@@ -8,8 +8,8 @@
     <meta name="description" content="Brooks Chamber of Commerce. Home page.  Find local businesses and services.">
     <meta name="author" content="Ezra Zacarias">
     <!-- Open Graph -->
-    <meta property="og:title" content="Brooks Chamber of Commerce - Home Page">
-    <meta property="og:description" content="Chamber of Commerce. Directory page. Find local businesses and services.">
+    <meta property="og:title" content="Brooks Chamber of Commerce - Thank You Page">
+    <meta property="og:description" content="Chamber of Commerce. Thank You page. Find local businesses and services.">
     <meta property="og:image" content="https://ezcryp.github.io/wdd231/chamber/images/brooks-chamber.webp">
     <meta property="og:url" content="https://ezcryp.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
@@ -31,6 +31,7 @@
     <!-- javascript link -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -52,7 +53,7 @@
         <nav>
             <ul class="navi">
                 <!-- make sure to put class active to the current page -->
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
@@ -61,9 +62,39 @@
     </header>
     
     <main class="main" role="main">
-        <h1>Thank You</h1>
+        <h1>Congratulations!</h1>
+        <img src="images/thank-you.webp" alt="Thank you">
         <p>Thanks for your submission!</p>
-
+        <div class="m-auto card card-md">
+                <div class="card-title">Your application is being processed.</div>
+                <br>
+                <div class="card-body">
+                    <div>
+                        <div class="font-bold">First Name:</div>
+                        <div id="firstname"></div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Last Name:</div>
+                        <div id="lastname"></div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Email:</div>
+                        <div id="email"></div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Phone:</div>
+                        <div id="phone"></div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Business/Organization Name:</div>
+                        <div id="business-name"></div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Registration Date:</div>
+                        <div id="timestamp"></div>
+                    </div>
+                </div>
+            </div>
     </main>
     
     <footer role="contentinfo" class="footer">
