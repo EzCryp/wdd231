@@ -63,6 +63,7 @@ form {
     background-color: var(--color4);
     padding: 10px 20px;
     color: var(--color2);
+    border-radius: 20px;
 }
 
 .btn-secondary:hover {
@@ -160,6 +161,7 @@ form {
 
 .membership-levels button {
     margin-top: 5px;
+    border-radius: 20px;
 }
 
 .animation-delay-1 {
@@ -300,7 +302,6 @@ form {
         grid-template-columns: 1fr 1fr;
     }
 }
-
 @media screen and (min-width: 1170px) {
     .modal {
         margin: 0 auto;

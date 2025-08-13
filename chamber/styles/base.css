@@ -446,7 +446,7 @@ section.b-cards p{
 
 .welcome {
     display: flex;
-    padding-top: 20px;
+    padding: 20px;
     /* padding-bottom: 20px; */
     justify-content: center;
 
@@ -595,7 +595,7 @@ section.business-card h3{
 }
 
 .business-card img {
-    padding: 20px;
+    padding: 50px;
 }
 
 .business-card p {
@@ -622,6 +622,90 @@ section.business-card h3{
     DISCOVERY PAGE STYLES
 
 ******************************/
+
+.discover h1 {
+    font-size: 2.5em;
+    margin: 30px;
+    margin-bottom: 1em;
+
+}
+
+div#allplaces {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 500px;
+    gap: 0.8em;
+}
+
+.place{
+    margin: 1rem 8px;
+    padding: 2em;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "title"
+    "img"
+    "desc"
+    "address"
+    "button"
+}
+
+.place h2 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 30px;
+    grid-area: title;
+}
+ .place figure{
+    width: 100%;
+    grid-area: img;
+    padding: 30px;
+ }
+
+ .place img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    max-height: fit-content;
+    object-fit: cover;
+ }
+
+ .placeDesc{
+    margin: 2em 1em;
+    grid-area: desc;
+ }
+
+ .place address {
+    margin: 2em 1em;
+    grid-area: address;
+ }
+
+ .place .button{
+    margin: 0 60px 1em;
+    font-size: 0.9em;
+    grid-area: button;
+    height: 2.2em;
+    border-radius: 20px;
+    background-color: var(--color4);
+    color: var(--color2);
+    font-weight: bold;
+}
+
+.place .button:hover{
+    background-color: var(--color1);
+    color: var(--color4);
+}
+
+.about-section {
+    padding: 0 30px;
+}
+
 
 /*****************************
 

@@ -1,0 +1,52 @@
+/*****************************
+
+    JOIN PAGE STYLES
+
+******************************/
+
+@media screen and (min-width: 990px) {
+    form {
+        padding: 40px;
+    }
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/*****************************
+
+    DISCOVERY PAGE STYLES
+
+******************************/
+
+@media screen and (min-width: 600px) {
+    div#allplaces {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 20px;
+        gap: 0.8em;
+    }
+
+    .place {
+        display: grid;
+        grid-template-areas: 
+            "title title"
+            "img desc"
+            "img address"
+            "button button";
+    }
+    .place img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .place h3 {
+        text-align: center;
+    }
+
+    .place p {
+        text-align: justify;
+    }
+
+}

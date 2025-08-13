@@ -31,6 +31,7 @@
     <!-- javascript link -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
 </head>
 <body>
     <header>
@@ -60,8 +61,24 @@
         </nav>
     </header>
     
-    <main>
-       
+    <main class="main discover" role="main">
+        <!-- Welcome Pop-up Message -->
+        <div class="welcome">
+            <div id="visit"></div>
+        </div>
+        <h1>Discover Taiwan Attractions</h1>
+         <div class="home about">
+            <section class="about-section">
+                <h2>About</h2>
+                <br>
+                <div>
+                    <p>
+                        Discover the beauty and culture of Taiwan with our curated list of must-visit attractions. From stunning natural landscapes to vibrant city life, explore the best that Taiwan has to offer. Whether you're interested in historical sites, outdoor adventures, or culinary experiences, there's something for everyone in this diverse and dynamic destination.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div id="allplaces"></div>
     </main>
     
     <footer role="contentinfo" class="footer">
