@@ -1,26 +1,4 @@
 import { places } from "../data/places.mjs";
-// welcome pop-up message
-const visitorInfo = document.querySelector("#visit");
-const lastVisit = localStorage.getItem("lastVisit");
-const currentDate = new Date();
-
-if (lastVisit === null) {
-	visitorInfo.textContent = "Welcome! Let us know if you have any questions.";
-} else {
-	const lastVisitDate = new Date(lastVisit);
-	const timeDiff = currentDate.getTime() - lastVisitDate.getTime();
-	const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-
-	if (daysDiff < 1) {
-		visitorInfo.textContent = "Welcome back!";
-	} else if (daysDiff === 1) {
-		visitorInfo.textContent = "You last visited 1 day ago.";
-	} else {
-		visitorInfo.textContent = `You last visited ${daysDiff} days ago.`;
-	}
-}
-
-localStorage.setItem("lastVisit", currentDate.toString());
 
 // PLACES
 const placeDiv = document.querySelector("#allplaces");
@@ -42,5 +20,39 @@ function displayItems(places) {
   });
 }
 
-
 displayItems(places)
+
+// visit message box
+document.addEventListener("DOMContentLoaded", () => {
+  const visitBox = document.getElementById("welcome-box");
+  const visitText = document.getElementById("visit-msg");
+  const closeBtn = document.getElementById("close-visit-message");
+
+  const lastVisit = localStorage.getItem("lastVisit");
+  const now = Date.now();
+  let message = "";
+
+  if (!lastVisit) {
+    message = "Welcome! Let us know if you have any questions.";
+  } else {
+    const msInDay = 1000 * 60 * 60 * 24;
+    const daysBetween = Math.floor((now - parseInt(lastVisit)) / msInDay);
+
+    if (daysBetween < 1) {
+      message = "Welcome Back!";
+    } else if (daysBetween === 1) {
+      message = "You're back! You last visited 1 day ago.";
+    } else {
+      message = `Welcome Back! You last visited ${daysBetween} days ago.`;
+    }
+  } 
+
+  visitText.textContent = message;
+  visitBox.classList.remove("hidden");
+
+  localStorage.setItem("lastVisit", now.toString());
+
+  closeBtn.addEventListener("click", () => {
+    visitBox.classList.add("hidden");
+  });
+});

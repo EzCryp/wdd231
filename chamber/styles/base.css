@@ -445,11 +445,37 @@ section.b-cards p{
 }
 
 .welcome {
-    display: flex;
+    display: grid;
+    grid-template: 1fr 1fr;
     padding: 20px;
+    margin: 2em;
     /* padding-bottom: 20px; */
     justify-content: center;
+}
 
+
+/* close modal */
+.welcome, span {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.hidden {
+    display: none;
+}
+
+.visit {
+    padding: 1em;
+    background-color: var(--color2);
+    border: 1px solid var(--color4);
+    /* border-radius: 10px; */
+}
+
+.visit button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .cta-button {
@@ -703,7 +729,7 @@ div#allplaces {
 }
 
 .about-section {
-    padding: 0 30px;
+    padding: 0 40px;
 }
 
 
