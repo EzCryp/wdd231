@@ -1,0 +1,196 @@
+/************************************
+*
+*   GENERAL STYLES 
+*
+***********************************/
+:root {
+  
+    --primary-color: #2E128C;
+    --secondary-color: #8ACC8A;
+    --background-color: #F0F8FF;
+    --accent-color: #48D1CC;
+    --text-color1: #D3D3D3;
+    --text-color2: #FFFFFF;
+
+    --font-primary: 'Roboto', sans-serif;
+   
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --font-style-normal: normal;
+    --font-style-italic: italic;
+}
+
+* {
+    margin: 10px;
+    padding: 0;
+}
+
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: var(--font-primary);
+}
+
+.site-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/************************************
+*
+*   HEADER / NAV
+*
+***********************************/
+header {
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color1);
+    padding: 1rem;
+    text-align: center;
+}
+
+
+h1, h2, h3 {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--text-color1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    /* display: inline-block; */
+    text-align: center;
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--text-color1);
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+ul, li {
+    /* text-decoration: none; */
+    list-style: none;
+}
+
+nav a {
+    color: var(--text-color2);
+    text-decoration: none;
+    font-weight: var(--font-weight-regular);
+}
+
+nav a:hover {
+    background: linear-gradient(180deg, var(--secondary-color), var(--primary-color));
+    /* filter: rgba(255, 255, 255, 0.5); */
+    color: var(--text-color2);
+    border: 2px var(--text-color1);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.site-title {
+    font-weight: var(--font-weight-bold);
+    font-size: large;
+}
+
+#site-logo img {
+    width: 150px;
+    height: 150px;
+    /* center image */
+    display: block;
+    margin: 0 auto;
+}
+
+li {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/*****************************
+
+Color Schema
+
+******************************/
+
+#color-schema, li {
+   text-decoration: none;
+}
+
+/* Dark Blue, #2E128C */
+.primary-color {
+    color: var(--primary-color);
+    background-color: var(--secondary-color); 
+}
+
+/* Light Green, #8ACC8A */
+.secondary-color {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+/* Alice Blue, #F0F8FF */
+.background-color {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+/* Medium Turquoise, #48D1CC */
+.accent-color {
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+}
+/* Light Gray, #D3D3D3 */
+.text-color1 {
+    color: var(--text-color1);
+    /* background-color: #2E128C; */
+}
+
+/* White, #FFFFFF */
+.text-color2 {
+    color: var(--text-color2);
+    background-color: var(--secondary-color)    ;
+}
+
+
+
+/*****************************
+
+Footer
+
+******************************/
+footer {
+    background: linear-gradient(180deg, var(--secondary-color), var(--primary-color));
+    color: var(--text-color2);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 15px;
+    height: auto;
+}
