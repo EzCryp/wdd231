@@ -1,0 +1,81 @@
+/*****************************
+
+    GENERAL STYLES
+
+******************************/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    --primary: #104056;
+    --color1: #89FFC7;
+    --color2: #f8f8f8;
+    --color3: #ffD05C;
+    --color4: #125a72;
+}
+
+img{
+    width: 100%;
+}
+
+body {
+    min-width: 320px;
+    max-width: 1200px;
+}
+
+/*****************************
+
+HEADER AND NAVIGATION STYLES
+
+******************************/
+
+h1,
+h2, 
+h3 {
+
+}
+
+
+
+
+
+/*****************************
+
+    MAIN STYLES 
+
+******************************/
+
+
+
+
+/* Interactive  */
+/* small screen 320-640px */
+@media screen and (min-width: 320px) {
+    
+}
+
+/* medium screen 641-1024px */
+@media screen and (min-width: 641px) {
+   
+}
+
+/* large screen 1025px and up */
+@media screen and (min-width: 1025px) {
+    
+}
+
+/*****************************
+
+    FOOTER STYLES
+
+******************************/
+
+
+
+
+
+
