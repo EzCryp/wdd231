@@ -201,7 +201,7 @@ p.level {
 }
 
 .button_member img {
-    width: 2em;
+    width: 1.5em;
 }
 
 .button_member:hover{
@@ -455,7 +455,7 @@ section.b-cards p{
 
 
 /* close modal */
-.welcome, span {
+.welcome > span {
     display: flex;
     justify-content: space-between;
     /* align-items: center; */

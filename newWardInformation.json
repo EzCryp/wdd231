@@ -1,0 +1,23 @@
+{
+  "family_name": "Flores",
+  "move_in_date": "2025-06-03",
+  "number_of_people": 3,
+  "visited_by_bishopric": false,
+  "family_members": [
+    {
+      "name": "Ardy Flores",
+      "gender": "Male",
+      "birthdate": "1993-05-12"
+    },
+    {
+      "name": "Din-Jay Flores",
+      "gender": "Female",
+      "birthdate": "1995-09-28"
+    },
+    {
+      "name": "Yuna Flores",
+      "gender": "Female",
+      "birthdate": "2022-03-05"
+    }
+  ]
+}

@@ -37,7 +37,7 @@ section img {
 }
 
 h1 {
-    color: #103157;
+    color: #0c51a0;
     margin: 10px 0;
 }
 
@@ -50,3 +50,6 @@ p {
     color: #8ec0f6;
 }
 
+footer p {
+    color: #0c51a0;
+}
