@@ -21,7 +21,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/proj-base.css">
-    <link rel="stylesheet" href="styles/proj-medium.css">
+    <!-- <link rel="stylesheet" href="styles/proj-medium.css"> -->
     <link rel="stylesheet" href="styles/proj-large.css">
 
     <!-- Font -->
@@ -31,163 +31,45 @@
 
     <!-- JavaScript -->
     <script src="scripts/proj.js" defer></script>
+    <script src="scripts/gadgetcycle.js" defer></script>
 </head>
 
 <body>
-    <!-- <header>
-        <h1>Gadget Cycle</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header> -->
+    <header>
+      <img src="images/gc-logo.svg" alt="Gadget Cycle Logo" width="150" height="150">
+      <span>GadgetCycle</span>
+    </header> 
+        
+    <!-- Navigation Menu -->
+    <button id="ham-btn" class="hamburger">&#9776;</button>
+    <nav id="nav-bar" class="navbar">
+      <ul class="navi">
+          <!-- Home Page Name and URL -->
+          <li class="active"><a href="/finalproject/index.html">Home</a></li>
+          <!-- Gadget Gallery Page and URL -->
+          <li><a href="/finalproject/gallery.html">Gallery</a></li> 
+          <!-- Order Form Page and URL -->
+          <li><a href="/finalproject/order.html">Order</a></li>
+      </ul>
+    </nav>
 
     <main>
-        <!-- <section>
-            <h2>Welcome to Gadget Cycle</h2>
-            <p>Your one-stop platform for buying, selling, and trading gadgets.</p>
-        </section> -->
-
-
-    <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">
-          <!-- Simple G made of arrows -->
-          <img src="images/GadgetCycle_Logo.png" alt="GadgetCycle Logo">
-        </div>
-        <div>
-          <h1>GadgetCycle Ez</h1>
-          <div class="tag">Old Tech, New Life</div>
-        </div>
-      </div>
-
-      <nav>
-        <button class="ghost" id="browseBtn">Browse</button>
-        <button class="ghost" id="sellBtn">Sell My Gadget</button>
-        <button class="primary" id="signinBtn">Sign in</button>
-      </nav>
-    </header>
-
-    <main class="hero">
-      <section class="hero-card">
-        <h2>Turn Your Old Gadgets into Cash — fast & secure</h2>
-        <p>List your phone, laptop, or camera in minutes. Trusted sellers, verified payouts, and eco-friendly recycling when needed.</p>
-
-        <div class="search">
-          <input id="globalSearch" placeholder="Search model, brand or category — e.g., iPhone 11" />
-          <button class="pill" id="quickSell">Get Instant Offer</button>
-        </div>
-
-        <div style="margin-top:16px;display:flex;gap:12px;align-items:center;">
-          <div style="flex:1">
-            <small class="muted">Filter</small>
-            <div style="display:flex;gap:8px;margin-top:8px;">
-              <select id="filterBrand" style="padding:10px;border-radius:10px;border:1px solid #e6eef2;">
-                <option value="">All Brands</option>
-              </select>
-              <select id="filterCond" style="padding:10px;border-radius:10px;border:1px solid #e6eef2;">
-                <option value="">Any Condition</option>
-                <option value="like-new">Like New</option>
-                <option value="good">Good</option>
-                <option value="repair">Needs Repair</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <small class="muted">Sort</small>
-            <select id="sortBy" style="padding:10px;border-radius:10px;border:1px solid #e6eef2;">
-              <option value="newest">Newest</option>
-              <option value="price-asc">Price: Low ➜ High</option>
-              <option value="price-desc">Price: High ➜ Low</option>
-            </select>
-          </div>
-        </div>
-
-        <div style="margin-top:18px;display:flex;gap:10px;align-items:center;">
-          <div class="pill">Verified Sellers</div>
-          <div class="pill" style="background:#ffc107;color:#0b3b00">Eco Impact</div>
-        </div>
-
-      </section>
-
-      <aside class="sidebar">
-        <h3 style="margin:0 0 8px">Instant Price Estimator</h3>
-        <div class="estimator">
-          <input id="estBrand" placeholder="Brand (e.g., Apple)" />
-          <input id="estModel" placeholder="Model (e.g., iPhone 11)" />
-          <select id="estCondition">
-            <option value="like-new">Like New</option>
-            <option value="good">Good</option>
-            <option value="repair">Needs Repair</option>
-          </select>
-          <button class="btn primary" id="estimateBtn">Estimate Price</button>
-          <div id="estResult" style="padding:10px;border-radius:10px;background:#f6fffb;border:1px solid #e6f8f5;display:none">
-            <div style="font-weight:800;font-size:18px" id="estPrice"></div>
-            <small class="muted">This is an instant estimate — final offer may vary after inspection.</small>
-          </div>
-        </div>
-
-        <div class="impact">
-          <div style="flex:1">
-            <small class="muted">E-waste prevented</small>
-            <div style="font-weight:800;font-size:20px">2,418 kg</div>
-          </div>
-          <div style="text-align:right">
-            <small class="muted">Saved CO₂</small>
-            <div style="font-weight:800;font-size:20px">1.2 t</div>
-          </div>
-        </div>
-      </aside>
+      <h1>Welcome to Gadget Cycle</h1>
+      <p>Your one-stop platform for buying, selling, and trading gadgets.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quo quos provident, maiores architecto nisi illo quasi beatae laboriosam temporibus ad cum consectetur iste quibusdam aliquid totam quidem voluptate aut!</p>
     </main>
-
-    <section class="grid" id="listings">
-      <!-- JS will populate cards -->
-    </section>
-
+    
     <footer>
-      <small>© GadgetCycle • Built with reuse & care • Data wipe guarantee</small>
+      <p>&copy; 2025 | Ezra Zacarias | Gadget Cycle. All rights reserved.</p>
+      <p>Follow us on <a href="https://www.example.com">Social Media</a></p>
+
+      <!-- video demo link via Youtube -->
+      <p>Watch our demo on <a href="https://www.youtube.com">Video Demo</a></p>
     </footer>
-  </div>
 
-
-  <!-- Sell modal -->
-  <div id="sellModal" style="position:fixed;inset:0;background:rgba(2,6,23,0.4);display:none;align-items:center;justify-content:center;padding:20px;z-index:90">
-    <div style="background:var(--card);border-radius:14px;padding:16px;max-width:720px;width:100%;box-shadow:0 18px 40px rgba(2,6,23,0.35);">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <h3 style="margin:0">List an item to sell</h3>
-        <button id="closeSell">✕</button>
-      </div>
-      <p class="muted">Add details and photos — we’ll give you instant offers or open it to bids.</p>
-
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
-        <input id="sBrand" placeholder="Brand (e.g., Samsung)" />
-        <input id="sModel" placeholder="Model (e.g., Galaxy S10)" />
-        <select id="sCondition">
-          <option value="like-new">Like New</option>
-          <option value="good">Good</option>
-          <option value="repair">Needs Repair</option>
-        </select>
-        <input id="sPrice" placeholder="Asking price (optional)" />
-      </div>
-      <div style="margin-top:12px;display:flex;gap:8px;justify-content:flex-end">
-        <button class="btn ghost" id="cancelSell">Cancel</button>
-        <button class="btn primary" id="submitSell">Publish Listing</button>
-      </div>
-    </div>
-  </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 | Ezra Zacarias | Gadget Cycle. All rights reserved.</p>
-        <p>Follow us on <a href="https://www.example.com">Social Media</a></p>
-
-         <!-- video demo link -->
-
-    </footer>
 </body>
-
+  
 </html>
+
+  <!-- <h1>Welcome to Gadget Cycle</h1>
+  <p>Your one-stop platform for buying, selling, and trading gadgets.</p> -->

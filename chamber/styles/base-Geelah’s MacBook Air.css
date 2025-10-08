@@ -446,11 +446,12 @@ section.b-cards p{
 
 .welcome {
     display: flex;
+
     /* grid-template: 1fr / 1fr; */
     padding: 20px;
     margin: 2em;
     /* padding-bottom: 20px; */
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
