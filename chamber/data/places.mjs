@@ -26,7 +26,7 @@ export const places = [
         "address": "Taipei city, Taipei",
         "description": "Enjoy panoramic views of Taipei from the observation deck of Taipei 101, one of the tallest buildings in the world.",
         "cost": "400Php",
-        "imageUrl": "images/taipe-101.webp"
+        "imageUrl": "images/taipei-101.webp"
     },
     {
         "name": "Pingxi Sky Lantern Festival",
