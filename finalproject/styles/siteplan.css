@@ -133,6 +133,10 @@ li {
 }
 
 
+.wireframe-container div img {
+    width: 90%;
+}
+
 /*****************************
 
 Color Schema
