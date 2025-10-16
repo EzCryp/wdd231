@@ -1,0 +1,45 @@
+/* large screen 1025px and up */
+@media screen and (min-width: 1025px) {
+      main {
+        padding: 1rem;
+    }
+
+    #ham-btn {
+    display: none;
+    }   
+
+    ul.navi, ul.navi.open {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        background:var(--primary);
+        padding: 8px;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 40% 40% 20%;
+        gap: 1em;
+        align-items: end;
+        justify-content: right;
+        width: 100%;
+    }
+
+    .soc-med {
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+    /* form {
+        padding: 40px;
+    } */
+
+    .ordercontent {
+        grid-template-columns: 40% 30%;
+    }
+
+    .modal {
+        margin: 0 auto;
+    }
+}

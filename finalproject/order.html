@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadgetCycle Order Page - WDD231 Final Project</title>
+    <meta name="author" content="Ezra Zacarias">
+    <meta name="description" content="Gadget Cycle - A platform to buy, sell, and trade gadgets.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gadget Cycle - WDD231 Final Project">
+    <meta property="og:description" content="Gadget Cycle - A platform to buy, sell, and trade gadgets.">
+    <meta property="og:image" content="styles/favicon.ico">
+    <meta property="og:url" content="https://www.example.com">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/GadgetCycle_Logo.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/proj-base.css">
+    <link rel="stylesheet" href="styles/proj-medium.css">
+    <link rel="stylesheet" href="styles/proj-large.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <!-- <script src="scripts/proj.js" defer></script> -->
+    <script src="scripts/gadgetcycle.js" defer></script>
+</head>
+
+<body>
+    <header>
+      <a href="/finalproject/index.html"><img src="images/gc-logo.svg" alt="Gadget Cycle Logo" width="150" height="150"></a>
+      <!-- <span class="site-title">GadgetCycle</span> -->
+    </header> 
+        
+    <!-- Navigation Menu -->
+    <button id="ham-btn" class="hamburger"></button>
+    <nav id="nav-bar" class="navbar">
+      <ul class="navi">
+          <!-- Home Page Name and URL -->
+          <li><a href="/finalproject/index.html">Home</a></li>
+          <!-- Gadget Gallery Page and URL -->
+          <li><a href="/finalproject/gallery.html">Gallery</a></li> 
+          <!-- Order Form Page and URL -->
+          <li class="active"><a href="/finalproject/order.html">Order</a></li>
+      </ul>
+    </nav>
+
+    <main>
+    <h1>Order Now</h1>
+            <div class="ordercontent">
+                <form action="thank-you.html" method="GET">
+                    <div class="form-group">
+                        <label class="required">First Name:
+                            <input class="form-control" type="text" name="firstname" title="First Name" autocomplete="on" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="required">Last Name:
+                            <input class="form-control" type="text" name="lastname" title="Last Name" autocomplete="on" required>
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="required">Email:
+                            <input class="form-control" type="email" name="email" title="Email Address" autocomplete="email" placeholder="tech@gadgecycle.com" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="required">Phone Number:
+                            <input class="form-control" type="tel" name="phone" title="Mobile Phone Number" placeholder="(+63) 1234 4567" autocomplete="tel" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Type of Transaction:
+                            <select class="form-control" name="tier">
+                                <option disabled selected>Select Transaction</option>
+                                <option value="trade-swap">Trade/Swap gadget</option>
+                                <option value="buy-used">Buy used gadget</option>
+                                <option value="buy-new">Buy new gadget</option>
+                                <option value="sell-used">Sell used gadget</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label> Describe your gadget needs or what you're offering:
+                            <textarea class="form-control" title="Describe your gadget needs or what you're offering" name="description" rows="6"></textarea>
+                        </label>
+                    </div>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <button type="submit" class="btn btn-secondary btn-lg self-right">Submit</button>
+                </form>
+
+                <div class="tier-container">
+                    <div class="tier">
+                        <div>
+                            <div>Trade or Swap</div>
+                            <div>
+                                <button class="learn-more-button btn btn-secondary " data-id="1">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tier animation-delay-1">
+                        <div>
+                            <div>Buy Used Gadget</div>
+                            <div>
+                                <button class="learn-more-button btn btn-secondary " data-id="2">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tier animation-delay-2">
+                        <div>
+                            <div>Buy New Gadget</div>
+                            <div>
+                                <button class="learn-more-button btn btn-secondary " data-id="3">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tier animation-delay-3">
+                        <div>
+                            <div>Sell Used Gadget</div>
+                            <div>
+                                <button class="learn-more-button btn btn-secondary " data-id="4">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    
+   <footer role="contentinfo" class="footer">
+
+      <div class="footer-line">
+        <p>&copy;2025 | Ezra Zacarias | Gadget Cycle. All rights reserved.</p>
+      </div>
+
+      <div class="video-demo">
+        <!-- video demo link via Youtube -->
+        <p>🎥 <a href="https://www.youtube.com">Video Demo</a target="_blank"></p>
+      </div>
+
+      <div class="soc-med">
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook link"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-x.svg" alt="twitter link"></a>
+        <a href="https://www.github.com" target="_blank"><img src="images/github.svg" alt="GitHub link"></a>
+      </div>
+
+    </footer>
+    <dialog id="tier-1" class="modal modal-md">
+            <div class="modal-header bg-primary">Tier 1</div>
+            <div class="modal-body">
+                <div class="text-lg font-bold mb-20">Trade or Swap</div>
+                <div class="flex sm-flex-column lg-flex-row">
+                    <div>
+                        <div><span class="font-bold">Description:</span> Trading or swapping of pre-loved gadget. Items must be working  and in good condition.  </div>
+                        <br>
+                        <div><span class="font-bold">Ideal for:</span> Low budget traders looking to trade or swap gadgets with less or no money involved.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default close-modal-button" data-modal-id="1">Close</button>
+            </div>
+    </dialog>
+    <dialog id="tier-2" class="modal modal-md">
+        <div class="modal-header bg-primary">Tier 2</div>
+        <div class="modal-body">
+            <div class="text-lg font-bold mb-20">Buy Used Gadget</div>
+            <div class="flex sm-flex-column lg-flex-row">
+                <div>
+                    <div><span class="font-bold">Description:</span> Buying of used gadgets in good condition.</div>
+                    <br>
+                    <div><span class="font-bold">Ideal for:</span> Buyer with limited budget.</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default close-modal-button" data-modal-id="2">Close</button>
+        </div>
+    </dialog>
+    <dialog id="tier-3" class="modal modal-md">
+        <div class="modal-header bg-primary">Tier 3</div>
+        <div class="modal-body">
+            <div class="text-lg font-bold mb-20">Buy New Gadget</div>
+            <div class="flex sm-flex-column lg-flex-row">
+                <div>
+                    <div><span class="font-bold">Description:</span> Buying of new or lastest gadgets.</div>
+                    <br>
+                    <div><span class="font-bold">Ideal for:</span> Buyer whose looking for the new and latest gadgets.</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default close-modal-button" data-modal-id="3">Close</button>
+        </div>
+    </dialog>
+    <dialog id="tier-4" class="modal modal-md">
+        <div class="modal-header bg-primary">Tier 4</div>
+        <div class="modal-body">
+            <div class="text-lg font-bold mb-20">Sell Used Gadget</div>
+            <div class="flex sm-flex-column lg-flex-row">
+                <div>
+                    <div><span class="font-bold">Description:</span> Selling of used or pre-loved gadgets in good condition and warranty.</div>
+                    <br>
+                    <div><span class="font-bold">Ideal for:</span> Sellers looking to sell their pre-loved gadgets.</div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default close-modal-button" data-modal-id="4">Close</button>
+        </div>
+    </dialog>
+
+</body>
+</html>
+
+  <!-- <h1>Welcome to Gadget Cycle</h1>
+  <p>Your one-stop platform for buying, selling, and trading gadgets.</p> -->

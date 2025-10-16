@@ -5,7 +5,7 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gadget Cyle - WDD231 Final Project</title>
+    <title>GadgetCycle Home Page - WDD231 Final Project</title>
     <meta name="author" content="Ezra Zacarias">
     <meta name="description" content="Gadget Cycle - A platform to buy, sell, and trade gadgets.">
 
@@ -21,7 +21,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/proj-base.css">
-    <!-- <link rel="stylesheet" href="styles/proj-medium.css"> -->
+    <link rel="stylesheet" href="styles/proj-medium.css">
     <link rel="stylesheet" href="styles/proj-large.css">
 
     <!-- Font -->
@@ -30,18 +30,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- JavaScript -->
-    <script src="scripts/proj.js" defer></script>
+    <!-- <script src="scripts/proj.js" defer></script> -->
     <script src="scripts/gadgetcycle.js" defer></script>
 </head>
 
 <body>
     <header>
       <img src="images/gc-logo.svg" alt="Gadget Cycle Logo" width="150" height="150">
-      <span>GadgetCycle</span>
+      <!-- <span class="site-title">GadgetCycle</span> -->
     </header> 
         
     <!-- Navigation Menu -->
-    <button id="ham-btn" class="hamburger">&#9776;</button>
+    <button id="ham-btn" class="hamburger"></button>
     <nav id="nav-bar" class="navbar">
       <ul class="navi">
           <!-- Home Page Name and URL -->
@@ -53,22 +53,48 @@
       </ul>
     </nav>
 
+    <section class="heroCon" role="banner">
+            <div class="hero-image">
+                <picture>
+                    <source media="(min-width: 1025px)" srcset="images/banner.webp">
+                    <img src="images/banner2.webp" alt="gadgecycle banner" width="1024" height="auto" loading="lazy">
+                </picture>
+            </div>
+            
+            <div class="cta-Btn">
+                <!-- <a href="/join.html">JOIN</a> -->
+                <a href="/finalproject/order.html" class="btn">Order here</a>
+            </div>
+        </section>
+
+    
     <main>
-      <h1>Welcome to Gadget Cycle</h1>
+      
+      <h1>Welcome to Gadget Cycle</h1> 
       <p>Your one-stop platform for buying, selling, and trading gadgets.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quo quos provident, maiores architecto nisi illo quasi beatae laboriosam temporibus ad cum consectetur iste quibusdam aliquid totam quidem voluptate aut!</p>
+      <p>The site purpose is to provide a platform for users to buy and sell gadgets easily.</p>
     </main>
     
-    <footer>
-      <p>&copy; 2025 | Ezra Zacarias | Gadget Cycle. All rights reserved.</p>
-      <p>Follow us on <a href="https://www.example.com">Social Media</a></p>
+    <footer role="contentinfo" class="footer">
 
-      <!-- video demo link via Youtube -->
-      <p>Watch our demo on <a href="https://www.youtube.com">Video Demo</a></p>
+      <div class="footer-line">
+        <p>&copy;2025 | Ezra Zacarias | Gadget Cycle. All rights reserved.</p>
+      </div>
+
+      <div class="video-demo">
+        <!-- video demo link via Youtube -->
+        <p>🎥 <a href="https://www.youtube.com">Video Demo</a target="_blank"></p>
+      </div>
+
+      <div class="soc-med">
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook link"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-x.svg" alt="twitter link"></a>
+        <a href="https://www.github.com" target="_blank"><img src="images/github.svg" alt="GitHub link"></a>
+      </div>
+
     </footer>
 
 </body>
-  
 </html>
 
   <!-- <h1>Welcome to Gadget Cycle</h1>

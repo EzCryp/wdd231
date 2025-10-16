@@ -1,1 +1,17 @@
+/* medium screen 641-1024px */
+@media screen and (min-width: 641px) and ( max-width: 1024px) {
+    
+    main {
+        padding: 1rem;
+    }
+     
+   .soc-med {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    }
 
+    
+}
