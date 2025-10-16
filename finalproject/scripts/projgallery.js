@@ -1,4 +1,4 @@
-import { gadgets } from "../data/gadgets.mjs";
+import { gadgets } from "..finalproject/data/gadgets.mjs";
 
 // GADGETS
 const gadgetDiv = document.querySelector("#allgadgets");
