@@ -5,7 +5,7 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GadgetCycle Home Page - WDD231 Final Project</title>
+    <title>GadgetCycle thank-you Page - WDD231 Final Project</title>
     <meta name="author" content="Ezra Zacarias">
     <meta name="description" content="Gadget Cycle - A platform to buy, sell, and trade gadgets.">
 
@@ -13,16 +13,16 @@
     <meta property="og:title" content="Gadget Cycle - WDD231 Final Project">
     <meta property="og:description" content="Gadget Cycle - A platform to buy, sell, and trade gadgets.">
     <meta property="og:image" content="styles/favicon.ico">
-    <meta property="og:url" content="https://www.gadgecycle.com">
+    <meta property="og:url" content="https://www.example.com">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/finalproject/images/GadgetCycle_Logo.ico">
+    <link rel="icon" type="image/x-icon" href="/finalproject/images/gadgetcycle_logo.ico">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/finalproject/styles/normalize.css">
     <link rel="stylesheet" href="/finalproject/styles/proj-base.css">
     <link rel="stylesheet" href="/finalproject/styles/proj-medium.css">
-    <link rel="stylesheet" href="/finalproject/styles/proj-large.css">
+    <link rel="stylesheet" href="styles/proj-large.css">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,13 +30,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- JavaScript -->
-    <!-- <script src="scripts/proj.js" defer></script> -->
+    <script src="/finalproject/scripts/proj.js" defer></script>
     <script src="/finalproject/scripts/gadgetcycle.js" defer></script>
 </head>
 
 <body>
     <header>
-      <img src="images/gc-logo.svg" alt="Gadget Cycle Logo" width="150" height="150">
+      <a href="/finalproject/index.html"><img src="images/gc-logo.svg" alt="Gadget Cycle Logo" width="150" height="150"></a>
       <!-- <span class="site-title">GadgetCycle</span> -->
     </header> 
         
@@ -45,7 +45,7 @@
     <nav id="nav-bar" class="navbar">
       <ul class="navi">
           <!-- Home Page Name and URL -->
-          <li class="active"><a href="/finalproject/index.html">Home</a></li>
+          <li><a href="/finalproject/index.html">Home</a></li>
           <!-- Gadget Gallery Page and URL -->
           <li><a href="/finalproject/gallery.html">Gallery</a></li> 
           <!-- Order Form Page and URL -->
@@ -53,42 +53,16 @@
       </ul>
     </nav>
 
-    <section class="heroCon" role="banner">
-            <div class="hero-image">
-                <picture>
-                    <source media="(min-width: 1025px)" srcset="images/banner.webp">
-                    <img src="images/banner2.webp" alt="gadgecycle banner" width="1024" height="auto" loading="lazy">
-                </picture>
-            </div>
-            
-            <div class="cta-Btn">
-                <!-- <a href="/join.html">JOIN</a> -->
-                <a href="/finalproject/order.html" class="btn">Order here</a>
-            </div>
-        </section>
-
-    
     <main>
-      
-      <h1>Welcome to Gadget Cycle</h1> 
-      <p>Your one-stop platform for buying, selling, and trading gadgets.</p>
-      <p>The site purpose is to provide a platform for users to buy and sell gadgets easily.</p>
-      <br>
-      <section class="spotlightCon">
-                <h2>Spotlight</h2>
-                <p>Featured Gadgets of the Month</p>
-                <div class="gadgetspotlight">
-                    <div class="gadget-card">
-                        <!-- <img src="images/spotlight-business.webp" alt="Spotlight Business"> -->
-                        <!-- <h3>Local Bakery</h3>
-                        <p>Delicious baked goods made fresh daily. Visit us for your morning coffee and pastries!</p>
-                        <a href="directory.html">View More</a> -->
-                    </div>
-                </div>
-            </section>
+        <h1>Thank you! Your order has been received.</h1>
+                <picture>
+                    <source media="(min-width: 1025px)" srcset="images/ordergreeting.webp">
+                    <img src="images/ordergreeting.webp" alt="gadgecycle banner" width="1024" height="auto" loading="lazy">
+                </picture>
+        </div>
     </main>
     
-    <footer role="contentinfo" class="footer">
+   <footer role="contentinfo" class="footer">
 
       <div class="footer-line">
         <p>&copy;2025 | Ezra Zacarias | Gadget Cycle. All rights reserved.</p>
@@ -109,6 +83,3 @@
 
 </body>
 </html>
-
-  <!-- <h1>Welcome to Gadget Cycle</h1>
-  <p>Your one-stop platform for buying, selling, and trading gadgets.</p> -->
