@@ -58,15 +58,19 @@
             <div class="ordercontent">
                 <form action="thank-you.html" method="GET">
                     <div class="form-group">
-                        <label class="required">First Name:
-                            <input class="form-control" type="text" name="firstname" title="First Name" autocomplete="on" required>
+                        <label class="required">Name:
+                            <input class="form-control" type="text" name="name" title="Name" autocomplete="on" required>
                         </label>
                     </div>
-                    <div class="form-group">
+
+                    
+                    
+
+                    <!-- <div class="form-group">
                         <label class="required">Last Name:
                             <input class="form-control" type="text" name="lastname" title="Last Name" autocomplete="on" required>
                         </label>
-                    </div>
+                    </div> -->
                     
                     <div class="form-group">
                         <label class="required">Email:
@@ -89,12 +93,22 @@
                             </select>
                         </label>
                     </div>
+
+                    <div class="form-group">
+                        <label class="required">Date of Transaction:
+                            <br>
+                            <input type="date" id="Date" name="dateShared" required>
+                        </label>
+                    </div>
+                    
                     <div class="form-group">
                         <label> Describe your gadget needs or what you're offering:
                             <textarea class="form-control" title="Describe your gadget needs or what you're offering" name="description" rows="6"></textarea>
                         </label>
                     </div>
                     <input type="hidden" name="timestamp" id="timestamp">
+
+                    
                     <button type="submit" class="btn btn-secondary btn-lg self-right">Submit</button>
                 </form>
 
@@ -219,6 +233,3 @@
 
 </body>
 </html>
-
-  <!-- <h1>Welcome to Gadget Cycle</h1>
-  <p>Your one-stop platform for buying, selling, and trading gadgets.</p> -->

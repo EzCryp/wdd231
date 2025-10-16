@@ -3,9 +3,6 @@
 // Author: Ezra Zacarias
 
 
-
-
-
 // -----------------------------
     // Sample data & utilities
     // -----------------------------
