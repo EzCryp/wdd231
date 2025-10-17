@@ -5,7 +5,7 @@ export const gadgets = [
         "model": "Airpods Pro 2nd Gen",
         "price": "13,000 PHP",
         "condition": "brand new",
-        "image": "images/airpodspro2.webp",
+        "imageUrl": "images/airpodspro2.webp",
         "id": "1"
     },
     {
@@ -13,7 +13,7 @@ export const gadgets = [
         "model": "Apple Watch SE 2nd Gen",
         "price": "18,000 PHP",
         "condition": "brand new",
-        "image": "images/applewatchse2.webp",
+        "imageUrl": "images/applewatchse2.webp",
         "id": "2"
     },
     {
@@ -21,7 +21,7 @@ export const gadgets = [
         "model": "Hero 13 Black",
         "price": "25,000 PHP",
         "condition": "brand new",
-        "image": "images/goprohero13black.webp",
+        "imageUrl": "images/goprohero13black.webp",
         "id": "3"
     },
     {
@@ -29,7 +29,7 @@ export const gadgets = [
         "model": "iPad Air 11inch M2",
         "price": "42,000 PHP",
         "condition": "brand new",
-        "image": "images/ipad_air_11_M2.webp",
+        "imageUrl": "images/ipad_air_11_M2.webp",
         "id": "4"
     },
     {
@@ -37,7 +37,7 @@ export const gadgets = [
         "model": "iPhone 13",
         "price": "13,000 PHP",
         "condition": "brand new",
-        "image": "images/iphone13.webp",
+        "imageUrl": "images/iphone13.webp",
         "id": "5"
     },
     {
@@ -45,7 +45,7 @@ export const gadgets = [
         "model": "iPhone 17",
         "price": "55,000 PHP",
         "condition": "brand new",
-        "image": "images/iphone17.webp",
+        "imageUrl": "images/iphone17.webp",
         "id": "6"
     },
     {
@@ -53,7 +53,7 @@ export const gadgets = [
         "model": "Macbook Pro 14inch M2 Pro",
         "price": "100,000 PHP",
         "condition": "brand new",
-        "image": "images/macbookpro14.webp",
+        "imageUrl": "images/macbookpro14.webp",
         "id": "7"
     },
     {
@@ -61,7 +61,7 @@ export const gadgets = [
         "model": "Mac Mini M4",
         "price": "45,000 PHP",
         "condition": "brand new",
-        "image": "images/macmini_M4.webp",
+        "imageUrl": "images/macmini_M4.webp",
         "id": "8"
     },
     {
@@ -69,7 +69,7 @@ export const gadgets = [
         "model": "Osmo Pocket 3",
         "price": "15,000 PHP",
         "condition": "good",
-        "image": "images/osmo-pocket-3.webp",
+        "imageUrl": "images/osmo-pocket-3.webp",
         "id": "9"
     }
 ]

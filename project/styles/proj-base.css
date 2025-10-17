@@ -551,9 +551,18 @@ input:required:valid {
     }
 }
 
-/* Gallery Page  */
+div.gadget-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 500px;
+    gap: 0.8em;
+}
 
-div#allgadgets {
+
+
+
+/* Gallery Page  */
+div#all-gadgets {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 500px;
@@ -569,32 +578,32 @@ div#allgadgets {
     display: grid;
     justify-content: center;
     grid-template-areas: 
-    "brand"
     "img"
     "model"
     "conditon"
     "price"
+    "button";
 }
 
-.place h2 {
+.gadgetModel h2 {
     display: flex;
     justify-content: center;
     margin: 1rem 30px;
-    grid-area: title;
+    grid-area: model;
 }
- .place figure{
+ .gadgetCon figure{
     width: 100%;
-    grid-area: img;
     padding: 10px;
+    grid-area: img;
  }
 
- .place figure:hover{
+ .gadgetCon figure:hover{
     filter: brightness(0.8);
     size-adjust: 1.2em;
     transform: scale(1.1)  ;
  }
 
- .place img {
+ .gadgetCon .photo img {
     width: 100%;
     height: auto;
     border-radius: 15px;
@@ -607,25 +616,25 @@ div#allgadgets {
  }
 
 
- .placeDesc{
+ .gadgetCon .gadgetCondition {      
     margin: 2em 1em;
-    grid-area: desc;
+    grid-area: condition;
  }
 
- .place address {
+.gadgetCon .gadgetPrice {
     margin: 2em 1em;
-    grid-area: address;
+    grid-area: price;
  }
 
- .place .button{
+ .gadgetCon.button{
     margin: 0 60px 1em;
     font-size: 0.9em;
-    grid-area: button;
     height: 2.2em;
     border-radius: 20px;
     background-color: var(--color4);
     color: var(--color2);
     font-weight: bold;
+    grid-area: button;
 }
 
 .place .button:hover{
