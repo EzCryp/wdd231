@@ -261,6 +261,7 @@ main p {
     background: none;
     border: none;
     cursor: pointer;
+    font-size: large;
 }
 
 .close-modal-button {
@@ -399,10 +400,6 @@ form {
     justify-content: space-around;
 }
 
-/* .tier > div:last-of-type {
-    display: flex;
-    flex-direction: center;
-} */
 
 .tier > div:last-of-type > div:first-of-type {
     font-weight: bold;
