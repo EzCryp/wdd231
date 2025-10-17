@@ -16,6 +16,12 @@
         padding: 8px;
     }
 
+    .tier > div:last-child{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    }
+    
     footer {
         display: grid;
         grid-template-columns: 40% 40% 20%;

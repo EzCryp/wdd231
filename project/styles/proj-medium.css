@@ -17,5 +17,13 @@
     width: 100%;
     }
 
+    footer {
+    display: grid;
+        grid-template-columns: 40% 40% 20%;
+        gap: 1em;
+        align-items: end;
+        justify-content: right;
+        width: 100%;
+    }
     
 }
