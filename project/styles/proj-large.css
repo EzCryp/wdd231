@@ -16,12 +16,27 @@
         padding: 8px;
     }
 
-    .tier > div:last-child{
+    .tier > div:first-of-type {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .spotlightCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--color2);
+    margin: 0.5rem 3rem 0.5rem 3rem;
+}
+
+    .spotlight-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     }
-    
+
     footer {
         display: grid;
         grid-template-columns: 40% 40% 20%;

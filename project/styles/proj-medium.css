@@ -9,12 +9,28 @@
         grid-template-columns: 50% 30%;
     }
      
-   .soc-med {
+
+    .spotlightCon {
     display: flex;
-    gap: 5px;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--color2);
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+    .spotlight-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    }
+
+    .tier > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     }
 
     footer {
@@ -25,5 +41,15 @@
         justify-content: right;
         width: 100%;
     }
+    
+   .soc-med {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    }
+
+    
     
 }
