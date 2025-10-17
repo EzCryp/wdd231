@@ -200,7 +200,7 @@ main p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2em;
+    padding: 10px;
     background-color: var(--color2);
 }
 
@@ -254,6 +254,13 @@ main p {
 .visit button {
     background: none;
     border: none;
+    cursor: pointer;
+}
+
+.close-modal-button {
+    background: none;
+    border: none;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -472,6 +479,10 @@ input:required:valid {
     margin: 0 auto;
 }
 
+
+
+
+/* cards container */
 .card {
     border: 1px solid rgba(0,0,0,0.2);
     padding: 30px;
@@ -495,9 +506,6 @@ input:required:valid {
     gap: 20px;
 }
 
-/* .card-body > div {
-
-} */
 
 @keyframes appear {
     from {
@@ -521,7 +529,7 @@ input:required:valid {
     }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 320px) {
     .lg-flex-row {
         flex-direction: row;
     }
@@ -625,6 +633,8 @@ div#allgadgets {
 .about-section {
     padding: 0 40px;
 }
+
+
 /*****************************
 
     FOOTER STYLES
@@ -641,11 +651,9 @@ div#allgadgets {
     gap: 1em;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     }
 
 
- 
 
     .soc-med a:hover img {
     filter: brightness(0.5);

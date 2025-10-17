@@ -73,8 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Spotlight Businesses
-// Fetching business data and displaying spotlight businesses
+
+
+// Spotlight gadgets
+// Fetching gadget data and displaying spotlight gadgets
 const gadgetCon = document.querySelector('.gadgetspotlight');
 const gadgetsUrl = 'data/gadgets.json';
 
@@ -100,14 +102,14 @@ getGadgetData().then((gadgets) => {
     );
     const shuffled = qualified.sort(() => 0.5 - Math.random());
     const selected = shuffled.slice(0, 3);
-  displayBusinessCards(selected, gadgetCon);
+  displayCards(selected, gadgetCon);
 })
 
 
-function displayBusinessCards(gadgetList,elementCon) {
+function displaygadgetCards(gadgetList,elementCon) {
     elementCon.innerHTML = "";
     gadgetList.forEach((gadget) => {
-        const gadgetCards = `<div id="cards" class="business-card">
+        const gadgetCards = `<div id="cards" class="gadget-card">
                 <div class="bname">
                     <h3 class="b-name">${gadget.name}</h3>
                     <span class="mem-level">${gadget.gadgetship}</span>

@@ -23,44 +23,44 @@ function displayItems(gadgets) {
 displayItems(gadgets);
 
 
-// Endpoint
-// const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
 
-// const cards = document.querySelector('#cards');
+const url = '../data/gadgets.json';
 
-// async function getProphetData() {
-//     const response = await fetch(url);
-//     const data = await response.json();
-//     // console.table(data.prophets);
-//     displayProphets(data.prophets);
-// }
+const cards = document.querySelector('.gadget-card');
 
-// getProphetData();
+async function getGadgetData() {
+    const response = await fetch(url);
+    const data = await response.json();
 
-// const displayProphets = (prophets) => {
-//     prophets.forEach(prophet => {
+    displayGadgets(data.gadgets);
+}
 
-//         const card = document.createElement('section');
-//         const fullName = document.createElement('h2');
-//         const birthDate = document.createElement('p');
-//         const birthPlace = document.createElement('p');
-//         const portrait = document.createElement('img');
+getGadgetData();
 
-//         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-//         birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
-//         birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
+const displayGadgets = (gadgets) => {
+    gadgets.forEach(gadget => {
 
-//         portrait.setAttribute('src', prophet.imageurl);
-//         portrait.setAttribute('alt', `${prophet.name} ${prophet.lastname} - ${prophet.order}`);
-//         portrait.setAttribute('loading', 'lazy');
-//         portrait.setAttribute('width', '340');
-//         portrait.setAttribute('height', '440');
+        const card = document.createElement('section');
+        const fullName = document.createElement('h2');
+        const birthDate = document.createElement('p');
+        const birthPlace = document.createElement('p');
+        const portrait = document.createElement('img');
 
-//         card.appendChild(fullName);
-//         card.appendChild(birthDate);
-//         card.appendChild(birthPlace);
-//         card.appendChild(portrait);
+        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
+        birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
 
-//         cards.appendChild(card);
-//     });
-// }
+        portrait.setAttribute('src', prophet.imageurl);
+        portrait.setAttribute('alt', `${prophet.name} ${prophet.lastname} - ${prophet.order}`);
+        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '340');
+        portrait.setAttribute('height', '440');
+
+        card.appendChild(fullName);
+        card.appendChild(birthDate);
+        card.appendChild(birthPlace);
+        card.appendChild(portrait);
+
+        cards.appendChild(card);
+    });
+}
