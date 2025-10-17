@@ -1,4 +1,4 @@
-import { gadgets } from "..finalproject/data/gadgets.mjs";
+import { gadgets } from "../data/gadgets.mjs";
 
 // GADGETS
 const gadgetDiv = document.querySelector("#allgadgets");
@@ -21,6 +21,7 @@ function displayItems(gadgets) {
 }
 
 displayItems(gadgets);
+
 
 // Endpoint
 // const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';

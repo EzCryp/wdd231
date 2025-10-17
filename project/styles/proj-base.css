@@ -187,8 +187,8 @@ ul.navi.open {
 ******************************/
 
 main p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
+    /* margin-bottom: 1rem; */
+    line-height: 1.2;
     color: var(--primary);
     text-align: center;
 }

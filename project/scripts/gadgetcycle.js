@@ -1,3 +1,4 @@
+// Hamburger menu functionality
 const hamburgerBtn = document.querySelector('#ham-btn');
 const navMenu = document.querySelector('.navi');
 
@@ -7,16 +8,6 @@ hamburgerBtn.addEventListener('click', () => {
 
 });
 
-
-// // Sample data for listings
-// const sampleListings = [
-//   {id:1,brand:'Apple',model:'iPhone 14',cond:'like-new',price:799,thumb:'📱',verified:true,added:'2025-07-05'},
-//   {id:2,brand:'Samsung',model:'Galaxy S21',cond:'good',price:699,thumb:'📱',verified:true,added:'2025-06-28'},
-//   {id:3,brand:'Google',model:'Pixel 6',cond:'fair',price:599,thumb:'📱',verified:false,added:'2025-05-13'},
-//   {id:4,brand:'OnePlus',model:'9 Pro',cond:'like-new',price:899,thumb:'📱',verified:true,added:'2025-07-20'},
-//   {id:5,brand:'Sony',model:'Xperia 1 III',cond:'good',price:999,thumb:'📱',verified:true,added:'2025-06-02'},
-//   {id:6,brand:'Xiaomi',model:'Mi 11',cond:'fair',price:499,thumb:'📱',verified:false,added:'2025-04-15'}
-// ];
 
 // Modal functionality
 const learnMoreButtons = document.querySelectorAll(".learn-more-button");
@@ -81,3 +72,58 @@ document.addEventListener("DOMContentLoaded", () => {
     visitBox.classList.add("hidden");
   });
 });
+
+// Spotlight Businesses
+// Fetching business data and displaying spotlight businesses
+const gadgetCon = document.querySelector('.gadgetspotlight');
+const gadgetsUrl = 'data/gadgets.json';
+
+async function getGadgetData() {
+    try {
+        const response = await fetch(gadgetsUrl);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        return data.gadgets;
+    }
+    catch(error) {
+        console.error("Error fetching gadget data:", error);
+    }
+
+}
+
+getGadgetData().then((gadgets) => {
+    const qualified = gadgets.filter(gadget =>
+      gadget.tier === 'Gold' || gadget.tier === 'Silver'
+    );
+    const shuffled = qualified.sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, 3);
+  displayBusinessCards(selected, gadgetCon);
+})
+
+
+function displayBusinessCards(gadgetList,elementCon) {
+    elementCon.innerHTML = "";
+    gadgetList.forEach((gadget) => {
+        const gadgetCards = `<div id="cards" class="business-card">
+                <div class="bname">
+                    <h3 class="b-name">${gadget.name}</h3>
+                    <span class="mem-level">${gadget.gadgetship}</span>
+                </div>
+                <div class="mem-info">
+                    <img src="images/${gadget.image}" alt="${gadget.name}">
+                    <div class="mem-details">
+                        <ul>
+                            <li><span class="info-label"></span><span class="mem-email">${ gadget.address}</span></li>
+                            <li><span class="info-label"></span><span class="mem-phone">${ gadget.number}</span></li>
+                            <li><span class="info-label"></span><a href="${gadget.website}" class="mem-url">${ gadget.name}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>`;
+        elementCon.innerHTML += gadgetCards;
+    });
+}

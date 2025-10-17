@@ -89,7 +89,8 @@ async function getBusinessData() {
         console.error("Error fetching business data:", error);
     }
 
-}
+} 
+
 
 getBusinessData().then((members) => {
     const qualified = members.filter(member =>
