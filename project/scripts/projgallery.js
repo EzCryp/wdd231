@@ -43,7 +43,7 @@ const displayGadgets = (gadgets) => {
     gadgets.forEach(gadget => {
 
         const card = document.createElement('section');
-        const gadgetModel = document.createElement('h2');
+        const gadgetModel = document.createElement('h4');
         const gadgetCondition = document.createElement('p');
         const gadgetPrice = document.createElement('p');
         const photo = document.createElement('img');
@@ -58,11 +58,12 @@ const displayGadgets = (gadgets) => {
         photo.setAttribute('width', '340');
         photo.setAttribute('height', '440');
 
-        card.appendChild(gadgetModel);
+        
         card.appendChild(gadgetCondition);
         card.appendChild(gadgetPrice);
         card.appendChild(photo);
-
+        card.appendChild(gadgetModel);
+        
         cards.appendChild(card);
     });
 }

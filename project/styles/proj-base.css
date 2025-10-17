@@ -21,6 +21,7 @@
 
 img{
     width: 100%;
+    height: auto;
 }
 
 body {
@@ -72,6 +73,7 @@ h1{
 h2, h3, h4, h5, h6 {
     color: var(--color4);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 
@@ -551,22 +553,26 @@ input:required:valid {
     }
 }
 
+
+/* Spotlight Gadget Cards */
 div.gadget-card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 100%;
     min-height: 500px;
-    gap: 0.8em;
+    gap: 1em;
+    margin: 1rem 0;
 }
-
-
 
 
 /* Gallery Page  */
 div#all-gadgets {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
     min-height: 500px;
     gap: 0.8em;
+    padding: 2rem;
 }
 
 .gadget {

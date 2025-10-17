@@ -29,12 +29,13 @@
     padding: 10px;
     background-color: var(--color2);
     margin: 0.5rem 3rem 0.5rem 3rem;
-}
+    }
 
-    .spotlight-cards {
+    div.gadget-card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.8rem;
+    padding: 2rem;
     }
 
     footer {

@@ -20,11 +20,14 @@
     margin: 0.5rem 1rem 0.5rem 1rem;
     }
 
-    .spotlight-cards {
+    div.gadget-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    }
+    grid-template-columns: 50% 50%;
+    min-height: 300px;
+    gap: 0.8em;
+    margin: 2rem;
+    padding: 2rem;
+}
 
     .tier > div:first-of-type {
     display: flex;
