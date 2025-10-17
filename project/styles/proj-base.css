@@ -343,7 +343,7 @@ form {
 }
 
 .modal-header {
-    background-color: var(--color4);
+    background-color: var(--primary);
     color: var(--color2);
     padding: 20px;
     text-align: center;
@@ -364,7 +364,7 @@ form {
 }
 
 .bg-primary {
-    background-color: var(--color4);
+    background-color: var(--primary);
 }
 
 .tier-container {
