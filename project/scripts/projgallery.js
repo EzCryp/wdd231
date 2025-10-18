@@ -63,7 +63,7 @@ const displayGadgets = (gadgets) => {
         card.appendChild(gadgetPrice);
         card.appendChild(photo);
         card.appendChild(gadgetModel);
-        
+
         cards.appendChild(card);
     });
 }

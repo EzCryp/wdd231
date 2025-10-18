@@ -63,7 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   } 
 
-  visitText.textContent = message;
+  if (visitText) {
+    visitText.textContent = message;
+  }
   visitBox.classList.remove("hidden");
 
   localStorage.setItem("lastVisit", now.toString());
@@ -75,57 +77,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Spotlight gadgets
-// Fetching gadget data and displaying spotlight gadgets
-const gadgetCon = document.querySelector('.gadgetspotlight');
-const gadgetsUrl = 'data/gadgets.json';
+// // Spotlight gadgets
+// // Fetching gadget data and displaying spotlight gadgets
+// const gadgetCon = document.querySelector('.gadgetspotlight');
+// const gadgetsUrl = 'data/gadgets.json';
 
-async function getGadgetData() {
-    try {
-        const response = await fetch(gadgetsUrl);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
+// async function getGadgetData() {
+//     try {
+//         const response = await fetch(gadgetsUrl);
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! status: ${response.status}`);
+//         }
 
-        const data = await response.json();
-        return data.gadgets;
-    }
-    catch(error) {
-        console.error("Error fetching gadget data:", error);
-    }
+//         const data = await response.json();
+//         return data.gadgets;
+//     }
+//     catch(error) {
+//         console.error("Error fetching gadget data:", error);
+//     }
 
-}
+// }
 
-getGadgetData().then((gadgets) => {
-    const qualified = gadgets.filter(gadget =>
-      gadget.tier === 'Gold' || gadget.tier === 'Silver'
-    );
-    const shuffled = qualified.sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, 3);
-  displayCards(selected, gadgetCon);
-})
+// getGadgetData().then((gadgets) => {
+//     const qualified = gadgets.filter(gadget =>
+//       gadget.tier === 'Gold' || gadget.tier === 'Silver'
+//     );
+//     const shuffled = qualified.sort(() => 0.5 - Math.random());
+//     const selected = shuffled.slice(0, 3);
+//   displayCards(selected, gadgetCon);
+// })
 
 
-function displaygadgetCards(gadgetList,elementCon) {
-    elementCon.innerHTML = "";
-    gadgetList.forEach((gadget) => {
-        const gadgetCards = `<div id="cards" class="gadget-card">
-                <div class="bname">
-                    <h3 class="b-name">${gadget.name}</h3>
-                    <span class="mem-level">${gadget.gadgetship}</span>
-                </div>
-                <div class="mem-info">
-                    <img src="images/${gadget.image}" alt="${gadget.name}">
-                    <div class="mem-details">
-                        <ul>
-                            <li><span class="info-label"></span><span class="mem-email">${ gadget.address}</span></li>
-                            <li><span class="info-label"></span><span class="mem-phone">${ gadget.number}</span></li>
-                            <li><span class="info-label"></span><a href="${gadget.website}" class="mem-url">${ gadget.name}</a></li>
-                        </ul>
-                    </div>
-                </div>
+// function displaygadgetCards(gadgetList,elementCon) {
+//     elementCon.innerHTML = "";
+//     gadgetList.forEach((gadget) => {
+//         const gadgetCards = `<div id="cards" class="gadget-card">
+//                 <div class="bname">
+//                     <h3 class="b-name">${gadget.name}</h3>
+//                     <span class="mem-level">${gadget.gadgetship}</span>
+//                 </div>
+//                 <div class="mem-info">
+//                     <img src="images/${gadget.image}" alt="${gadget.name}">
+//                     <div class="mem-details">
+//                         <ul>
+//                             <li><span class="info-label"></span><span class="mem-email">${ gadget.address}</span></li>
+//                             <li><span class="info-label"></span><span class="mem-phone">${ gadget.number}</span></li>
+//                             <li><span class="info-label"></span><a href="${gadget.website}" class="mem-url">${ gadget.name}</a></li>
+//                         </ul>
+//                     </div>
+//                 </div>
                 
-            </div>`;
-        elementCon.innerHTML += gadgetCards;
-    });
-}
+//             </div>`;
+//         elementCon.innerHTML += gadgetCards;
+//     });
+// }

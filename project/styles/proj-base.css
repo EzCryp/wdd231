@@ -204,6 +204,7 @@ main p {
     justify-content: center;
     padding: 10px;
     background-color: var(--color2);
+    /* border-radius: 20px; */
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
@@ -557,8 +558,8 @@ input:required:valid {
 /* Spotlight Gadget Cards */
 div.gadget-card {
     display: grid;
-    grid-template-columns: 100%;
-    min-height: 500px;
+    grid-template-columns: 1fr;
+    min-height: 300px;
     gap: 1em;
     margin: 1rem 0;
 }
@@ -567,13 +568,14 @@ div.gadget-card {
 /* Gallery Page  */
 div#all-gadgets {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     justify-content: center;
     align-items: center;
-    min-height: 500px;
+    min-height: 300px;
     gap: 0.8em;
     padding: 2rem;
 }
+
 
 .gadget {
     margin: 1rem 8px;
@@ -652,6 +654,15 @@ div#all-gadgets {
     padding: 0 40px;
 }
 
+#spot-cards img {
+    border-radius: 15px;
+    margin: 20px 0 10px 0;
+}
+
+#spot-cards img:hover {
+    filter: brightness(0.8);
+    transform: scale(0.9);
+}
 
 /*****************************
 
@@ -659,31 +670,31 @@ div#all-gadgets {
 
 ******************************/
 
-    footer {
-    background: linear-gradient(180deg, var(--primary), var(--color1));
-    color: var(--color5);
-    text-align: center;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr / 1fr;
-    gap: 1em;
-    justify-content: center;
-    align-items: center;
-    }
+footer {
+background: linear-gradient(180deg, var(--primary), var(--color1));
+color: var(--color5);
+text-align: center;
+padding: 1rem;
+display: grid;
+grid-template-columns: 1fr;
+gap: 1em;
+justify-content: center;
+align-items: center;
+}
 
 
 
-    .soc-med a:hover img {
-    filter: brightness(0.5);
-    }
+.soc-med a:hover img {
+filter: brightness(0.5);
+}
 
-    .soc-med a img {
-    width: 2em;
-    }
+.soc-med a img {
+width: 2em;
+}
 
-    .video-demo a:hover {
-    color: var(--color2);
-    }
+.video-demo a:hover {
+color: var(--color2);
+}
 
 
 
